@@ -1,0 +1,28 @@
+<style>
+img{
+	transform: rotate(270deg);
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	
+}
+
+</style>
+<script>
+	function swap()
+	{
+		var x=document.getElementById("1");
+		if(img.src == "images/ABP_0839.jpg")
+			img.src="images/ABP_0850.jpg";
+		else
+			img.src="images/ABP_0839.jpg";
+	}
+</script>
+
+<img src="images/ABP_0839.jpg" style="width:500px;height:500px;"><br><br>
+ 
+<img src="images/ABP_0850.jpg" style="width:100px;height:100px;" onclick= "javascript: return swap();"> 
+<img src="images/DSC_0115.jpg" style="width:100px;height:100px;" onclick= "javascript: return swap();"> 
+<img src="images/DSC_0161.jpg" style="width:100px;height:100px;" onclick= "javascript: return swap();"> 
+
+

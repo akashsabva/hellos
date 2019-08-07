@@ -1,0 +1,49 @@
+<html>
+<head>
+	<script>
+		function validate()
+		{
+			/*var x,y;
+			x = document.getElementById("user").value;
+			y = document.getElementById("password").value;
+			
+			if(x == "")
+			{
+				alert("Please Enter User Name");
+				document.getElementById("user").focus();
+				return false;
+			}
+			if(y == "")
+			{
+				alert("Please Enter Password");
+				document.getElementById("password").focus();
+				return false;
+			}*/
+			var a="";
+			var x= document.getElementById("user").value;
+			if(x == "")
+			{
+				a= "Enter User Name...<br>";
+				document.getElementById("5").innerHTML=a;
+				
+			} 
+			var y= document.getElementById("password").value;
+			if(y == "")
+			{
+				a=a+ "Enter password...";
+				document.getElementById("5").innerHTML=a;
+				
+			}
+		}
+	</script>
+</head>
+<body>
+	<table><tr><td><span id="5" style="background: lightyellow"></span></td></tr></table>
+	<td>User Name</td>
+	<input type="text" id="user">
+	<td>password</td>
+	<input type="password" id="password">
+	
+	<input type="submit" value="click" onclick="javascript: return validate();">
+</body>
+</html>
